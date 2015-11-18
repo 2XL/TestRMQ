@@ -1,0 +1,13 @@
+#
+
+1 hello world
+
+2 worker, add task
+
+3 logger, add log listener
+multiple loggers, such as one for each dummy host
+while emit_log would be the manager telling them to consume the logs
+
+4
+how to listen a subset of messages
+

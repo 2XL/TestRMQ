@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TestRabbitMQ.iml" filepath="$PROJECT_DIR$/TestRabbitMQ.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rabbit/rabbit.iml" filepath="$PROJECT_DIR$/rabbit/rabbit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbit_py/rabbit_py.iml" filepath="$PROJECT_DIR$/rabbit_py/rabbit_py.iml" />
     </modules>
   </component>
 </project>
