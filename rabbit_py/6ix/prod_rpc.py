@@ -5,11 +5,13 @@ import urlparse
 class FibonacciRpcClient(object):
     def __init__(self):
 
-        url_str = 'amqp://vvmlshzy:UwLCrV2bep7h8qr6k7WhbsxY7kA9_nas@moose.rmq.cloudamqp.com/vvmlshzy'
+        url_str = 'amqp://guest:guest@/10.30.236.141:5672/%2F'
         url = urlparse.urlparse(url_str)
 
         self.connection = pika.BlockingConnection(pika.ConnectionParameters(
-        host=url.hostname, virtual_host=url.path[1:], credentials=pika.PlainCredentials(url.username, url.password)
+            host=url.hostname,
+            virtual_host=url.path[1:],
+            credentials=pika.PlainCredentials(url.username, url.password)
         ))
 
         self.channel = self.connection.channel()
